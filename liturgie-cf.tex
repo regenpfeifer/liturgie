@@ -62,8 +62,8 @@
 %\PassOptionsToPackage{spanish,es-lcroman}{babel}
  \usepackage{babel}
 
-\PassOptionsToPackage{square,numbers}{natbib}
- \usepackage{natbib}
+%\PassOptionsToPackage{square,numbers}{natbib}
+% \usepackage{natbib}
 
 \PassOptionsToPackage{fleqn}{amsmath}		% math environments and more by the AMS
  \usepackage{amsmath}
@@ -131,8 +131,8 @@
 % ********************************************************************
 % Using PDFLaTeX
 % ********************************************************************
-\PassOptionsToPackage{hyperfootnotes=false,pdfpagelabels}{hyperref}
-	\usepackage{hyperref}  % backref linktocpage pagebackref
+%\PassOptionsToPackage{hyperfootnotes=false,pdfpagelabels}{hyperref}
+%	\usepackage{hyperref}  % backref linktocpage pagebackref
 %\pdfcompresslevel=9
 %\pdfadjustspacing=1
 %\PassOptionsToPackage{pdftex}{graphicx}
@@ -142,25 +142,25 @@
 % Setup the style of the backrefs from the bibliography
 % (translate the options to any language you use)
 % ********************************************************************
-\newcommand{\backrefnotcitedstring}{\relax}%(Nicht zitiert.)
-\newcommand{\backrefcitedsinglestring}[1]{(Zitiert auf Seite~#1.)}
-\newcommand{\backrefcitedmultistring}[1]{(Zitiert auf den Seiten~#1.)}
-\ifthenelse{\boolean{enable-backrefs}}%
-{%
-		\PassOptionsToPackage{hyperpageref}{backref}
-		\usepackage{backref} % to be loaded after hyperref package
-		   \renewcommand{\backreftwosep}{ and~} % separate 2 pages
-		   \renewcommand{\backreflastsep}{, and~} % separate last of longer list
-		   \renewcommand*{\backref}[1]{}  % disable standard
-		   \renewcommand*{\backrefalt}[4]{% detailed backref
-		      \ifcase #1 %
-		         \backrefnotcitedstring%
-		      \or%
-		         \backrefcitedsinglestring{#2}%
-		      \else%
-		         \backrefcitedmultistring{#2}%
-		      \fi}%
-}{\relax}
+%\newcommand{\backrefnotcitedstring}{\relax}%(Nicht zitiert.)
+%\newcommand{\backrefcitedsinglestring}[1]{(Zitiert auf Seite~#1.)}
+%\newcommand{\backrefcitedmultistring}[1]{(Zitiert auf den Seiten~#1.)}
+%\ifthenelse{\boolean{enable-backrefs}}%
+%{%
+%		\PassOptionsToPackage{hyperpageref}{backref}
+%		\usepackage{backref} % to be loaded after hyperref package
+%		   \renewcommand{\backreftwosep}{ and~} % separate 2 pages
+%		   \renewcommand{\backreflastsep}{, and~} % separate last of longer list
+%		   \renewcommand*{\backref}[1]{}  % disable standard
+%		   \renewcommand*{\backrefalt}[4]{% detailed backref
+%		      \ifcase #1 %
+%		         \backrefnotcitedstring%
+%		      \or%
+%		         \backrefcitedsinglestring{#2}%
+%		      \else%
+%		         \backrefcitedmultistring{#2}%
+%		      \fi}%
+%}{\relax}
 
 % ********************************************************************
 % Hyperreferences
