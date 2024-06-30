@@ -1,7 +1,7 @@
 # LaTeX-Liturgie
 
-Ein Stil für LaTeX und LyX zur Erstellung von Dokumenten mit liturgischen Texten (Gottesdienste, Predigten etc.); basierend auf dem Style ClassicThesis.
+#### Ein Stil für LaTeX und LyX zur Erstellung von Dokumenten mit liturgischen Texten (Gottesdienste, Predigten etc.); basierend auf dem Style ClassicThesis.
 
-#### Autor
+### Autor & Kontakt
 
-Hermann Josef Eckl ([Kontakt](https://regenpfeifer.net/kontakt/))
+[Hermann Josef Eckl](https://regenpfeifer.net/kontakt/)
